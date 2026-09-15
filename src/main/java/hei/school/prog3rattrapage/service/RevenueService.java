@@ -1,5 +1,8 @@
-package hei.school.prog3rattrapage;
+package hei.school.prog3rattrapage.service;
 
+import hei.school.prog3rattrapage.model.Driver;
+import hei.school.prog3rattrapage.model.Trip;
+import hei.school.prog3rattrapage.repository.DataRetriever;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;

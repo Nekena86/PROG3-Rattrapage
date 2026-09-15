@@ -1,5 +1,12 @@
-package hei.school.prog3rattrapage;
+package hei.school.prog3rattrapage.controller;
 
+import hei.school.prog3rattrapage.repository.DataRetriever;
+import hei.school.prog3rattrapage.Dto.DriverDto;
+import hei.school.prog3rattrapage.Dto.VehicleDto;
+import hei.school.prog3rattrapage.Dto.TripResponse;
+import hei.school.prog3rattrapage.model.TripStatusRequest;
+import hei.school.prog3rattrapage.model.Trip;
+import hei.school.prog3rattrapage.model.TripStatus;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

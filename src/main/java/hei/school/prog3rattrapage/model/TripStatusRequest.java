@@ -1,4 +1,4 @@
-package hei.school.prog3rattrapage;
+package hei.school.prog3rattrapage.model;
 
 import lombok.Getter;
 import lombok.Setter;

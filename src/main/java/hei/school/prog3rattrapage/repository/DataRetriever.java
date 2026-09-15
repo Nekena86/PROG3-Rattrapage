@@ -1,5 +1,8 @@
-package hei.school.prog3rattrapage;
+package hei.school.prog3rattrapage.repository;
 
+import hei.school.prog3rattrapage.db.DbConnection;
+import hei.school.prog3rattrapage.model.*;
+import hei.school.prog3rattrapage.model.Driver;
 import org.springframework.stereotype.Repository;
 
 import java.sql.*;
@@ -17,7 +20,7 @@ public class DataRetriever {
     }
 
 
-    public Driver findDriverById(String id) {
+    public hei.school.prog3rattrapage.model.Driver findDriverById(String id) {
 
         String sql = "SELECT * FROM driver WHERE id=?";
 
@@ -41,9 +44,9 @@ public class DataRetriever {
         return null;
     }
 
-    public List<Driver> findAllDrivers() {
+    public List<hei.school.prog3rattrapage.model.Driver> findAllDrivers() {
 
-        List<Driver> drivers = new ArrayList<>();
+        List<hei.school.prog3rattrapage.model.Driver> drivers = new ArrayList<>();
 
         String sql = "SELECT * FROM driver";
 
@@ -301,9 +304,9 @@ public class DataRetriever {
     }
 
 
-    private Driver mapDriver(ResultSet rs) throws SQLException {
+    private hei.school.prog3rattrapage.model.Driver mapDriver(ResultSet rs) throws SQLException {
 
-        Driver driver = new Driver();
+        hei.school.prog3rattrapage.model.Driver driver = new Driver();
 
         driver.setId(rs.getString("id"));
         driver.setName(rs.getString("name"));

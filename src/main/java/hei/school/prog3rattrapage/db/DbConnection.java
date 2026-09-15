@@ -1,4 +1,4 @@
-package hei.school.prog3rattrapage;
+package hei.school.prog3rattrapage.db;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

@@ -1,4 +1,6 @@
-package hei.school.prog3rattrapage;
+package hei.school.prog3rattrapage.Dto;
+
+import hei.school.prog3rattrapage.model.TripStatus;
 
 import java.time.LocalDate;
 

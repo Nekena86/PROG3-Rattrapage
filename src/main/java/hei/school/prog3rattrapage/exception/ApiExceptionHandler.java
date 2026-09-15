@@ -1,5 +1,5 @@
-package hei.school.prog3rattrapage;
-import hei.school.prog3rattrapage.ErrorDto;
+package hei.school.prog3rattrapage.exception;
+import hei.school.prog3rattrapage.Dto.ErrorDto;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;

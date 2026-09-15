@@ -1,4 +1,4 @@
-package hei.school.prog3rattrapage;
+package hei.school.prog3rattrapage.Dto;
 
 public record DriverStatisticsDto(
         String driverId,
