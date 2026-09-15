@@ -6,26 +6,6 @@ import java.sql.SQLException;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
-/**
- * Fournit des connexions JDBC vers la base PostgreSQL de la cooperative.
- *
- * CETTE CLASSE VOUS EST FOURNIE. Ne la modifiez pas.
- *
- * Utilisation attendue dans votre DataRetriever :
- *
- *   try (Connection connection = dbConnection.getConnection();
- *        PreparedStatement statement = connection.prepareStatement(sql)) {
- *       statement.setString(1, someId);
- *       try (ResultSet resultSet = statement.executeQuery()) {
- *           ...
- *       }
- *   } catch (SQLException e) {
- *       throw new RuntimeException(e);
- *   }
- *
- * Chaque appel a getConnection() ouvre une nouvelle connexion. C'est a
- * l'appelant de la refermer, d'ou l'usage systematique du try-with-resources.
- */
 @Component
 public class DbConnection {
 
